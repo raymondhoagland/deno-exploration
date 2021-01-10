@@ -10,5 +10,5 @@ A repo for exploring the possibilities of Deno.
 
 ### Execution
 ```bash
-GITHUB_API_TOKEN=<token> deno run --allow-net --allow-env main.ts --repoName=<repository name>
+GITHUB_API_TOKEN=<token> deno run --allow-net --allow-env src/main.ts --repoName=<repository name>
 ```

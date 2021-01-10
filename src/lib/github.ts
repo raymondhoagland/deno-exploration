@@ -37,6 +37,7 @@ export class GithubManager {
       })
     }
 
+    // Make the request
     const apiResponse = await fetch(
       this.apiEndpoint + endpoint,
       {
@@ -51,6 +52,10 @@ export class GithubManager {
     return apiResponse.json();
   }
 
+  /**
+   * List pull requests in a repository.
+   * @param repoName Name of the repository
+   */
   async listPrs(repoName: string): Promise<any> {
     return this.apiGetRequest(`/repos/${repoName}/pulls`);
   }
